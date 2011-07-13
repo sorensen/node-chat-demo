@@ -1,0 +1,44 @@
+body { 
+    font-size: 14px;
+    line-height: 1.65;
+}
+html,
+body,
+#application {
+    height: 100%;
+    overflow: hidden;
+}
+#application { 
+    position: relative;
+}
+    #user-input {
+        margin: 20px 40px;
+    }
+    #docs {
+        margin: 20px 40px;
+        float: right;
+    }
+    #messages {
+        border: 3px solid #777;
+        margin: 20px;
+        padding: 0;
+        position: absolute;
+        top: 60px;
+        bottom: 10px;
+        right: 10px;
+        left: 10px;
+        overflow-y: scroll;
+    }
+        #messages li {
+            padding: 0 0 0 170px;
+            list-style: none outside none;
+            position: relative;
+            border-bottom: 1px solid #ccc;
+        }
+        #messages li span {
+            border-right: 2px solid #777;
+            width: 140px;
+            position: absolute;
+            left: 0;
+            padding: 0 10px;
+        }
