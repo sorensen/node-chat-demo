@@ -22,7 +22,7 @@ $(function() {
     // field out when we are finished so it is ready to send another
     var send = function() {
         socket.emit('message', input.val());
-        messages.prepend('<li><span><b>' + socket.socket.sessionid + '</span> ' + input.val() + '</b></li>');
+        messages.prepend('<li><span><b>' + socket.socket.sessionid + '</b></span> ' + input.val() + '</li>');
         input.val('');
     };
     

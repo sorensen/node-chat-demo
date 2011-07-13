@@ -1,6 +1,17 @@
 body { 
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.65;
+    background-color: #D1E9B7;
+}
+a, a:visited {
+  padding: 0 2px;
+  text-decoration: none;
+  background: #AED881;
+  color: #222;
+}
+a:active, a:hover {
+  color: #000;
+  background: #8BC84B;
 }
 html,
 body,
@@ -19,7 +30,7 @@ body,
         float: right;
     }
     #messages {
-        border: 3px solid #777;
+        border: 3px solid #8BC84B;
         margin: 20px;
         padding: 0;
         position: absolute;
@@ -28,17 +39,20 @@ body,
         right: 10px;
         left: 10px;
         overflow-y: scroll;
+        background: #F3FAED;
     }
         #messages li {
-            padding: 0 0 0 170px;
+            padding: 0 0 0 215px;
             list-style: none outside none;
             position: relative;
             border-bottom: 1px solid #ccc;
         }
         #messages li span {
-            border-right: 2px solid #777;
-            width: 140px;
+            border-right: 2px solid #8BC84B;
+            width: 180px;
             position: absolute;
             left: 0;
+            top: 0;
+            bottom: 0;
             padding: 0 10px;
         }
