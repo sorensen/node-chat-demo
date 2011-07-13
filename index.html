@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <title>Node Chat Demo</title>
+  <style>
+    body {
+      font-size: 16px;
+      line-height: 24px;
+      background: #F3E9F7;
+      color: #022;
+      font-family: Arial;
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;
+    }
+    div.container {
+      width: 720px;
+      margin: 50px 0 50px 50px;
+    }
+    p, li {
+      margin: 16px 0 16px 0;
+      width: 550px;
+    }
+      p.break {
+        margin-top: 35px;
+      }
+    a, a:visited {
+      padding: 0 2px;
+      text-decoration: none;
+      background: #C8B1C9;
+      color: #222;
+    }
+    a:active, a:hover {
+      color: #000;
+      background: #BA7BA3;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 40px;
+    }
+    b.header {
+      font-size: 18px;
+    }
+    span.alias {
+      font-size: 14px;
+      font-style: italic;
+      margin-left: 20px;
+    }
+    table {
+      margin: 16px 0; padding: 0;
+    }
+      tr, td {
+        margin: 0; padding: 0;
+      }
+        td {
+          padding: 9px 15px 9px 0;
+        }
+          td.definition {
+            line-height: 18px;
+            font-size: 14px;
+          }
+    code, pre, tt {
+      font-family: Monaco, Consolas, "Lucida Console", monospace;
+      font-size: 12px;
+      line-height: 18px;
+      background-color: #EDE1F2;
+      color: #444;
+    }
+      code {
+        margin-left: 20px;
+      }
+      pre {
+        font-size: 12px;
+        padding: 2px 0 2px 12px;
+        border-left: 6px solid #B38AB5;
+        margin: 0px 0 10px;
+      }
+        li pre {
+          padding: 0;
+          border-left: 0;
+          margin: 6px 0 6px 0;
+        }
+    #diagram {
+      margin: 20px 0 0 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Node Chat Demo &nbsp;<sub style="font-size:150%;">&spades;</sub></h1>
+
+    <p>
+      <a href="http://github.com/sorensen/node-chat-demo/">Node.js Demo</a>
+      is a real-time chat application for
+      <a href="http://nodejs.org">Node.js</a>.
+    </p>
+
+    <p>
+      <a href="server.html">The complete annotated source code</a>
+      is also available.
+    </p>
+
+    <p>
+      <a href="#introduction">Introduction</a> |
+      <a href="#installation">Installation</a>
+    </p>
+
+    <h2 id="introduction">Introduction</h2>
+
+    <p>
+      This project is a simple 'hello world' introduction to using <tt>node.js</tt> 
+      and <tt>socket.io</tt> for making real-time applications, it is meant to be a 
+      stepping stone for understanding various concepts of <tt>node.js</tt> as well 
+      as a few common workflow patterns.
+    </p>
+    <p>
+      The server is leveraged on top of <a href="http://expressjs.org">express.js</a>, 
+      for simple server creation and setup.  The <a href="http://jade-lang.com">jade</a> 
+      template engine is used to create dynamic HTML on the fly, and finally, 
+      <a href="http://socket.io">socket.io</a> is used as an abstraction layer on top of 
+      websockets to provide the real-time communications.
+    </p>
+
+    <h2 id="installation">Installation</h2>
+    
+    <p>
+      This project depends on <b>Node.js</b> and the <b>Node Package Manager</b>
+      (npm). If you don't already have these installed, grab the latest. Node
+      releases can be found on the <a href="http://www.nodejs.org/#download">download page</a>.
+      NPM can be installed with a script:<br />
+      <tt>curl http://npmjs.org/install.sh | sudo sh</tt>
+    </p>
+    
+    <p>
+      The project can be installed by cloning this repo into your project.
+    </p>
+    <pre>
+    
+      git clone git://github.com/sorensen/node-chat-demo.git
+    </pre>
+    
+    <p>
+      To install the project dependancies, you can simply use <tt>NPM</tt> to do a 
+      one-line install for each related package.
+    </p>
+    <pre>
+    
+      npm install express
+      npm install jade
+      npm install socket.io
+    </pre>
+
+  </div>
+
+</body>
+</html>
