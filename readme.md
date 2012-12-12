@@ -19,7 +19,7 @@ installation guide, but until then, you know the drill.
 
 The project can be installed by cloning this repo into your project.
 
-    git clone git://github.com/sorensen/backbone-dnode.git
+    git clone git://github.com/sorensen/node-chat-demo.git
 
 
 ## Package dependancies (npm)

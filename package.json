@@ -1,0 +1,22 @@
+{ 
+  "name": "node-chat-demo"
+, "version": "0.0.2"
+, "description": "Chat Demo"
+, "main": "server.js"
+, "authors": "Beau Sorensen"
+, "scripts": {
+    "start": "node server.js"
+  }
+, "repository": {
+    "type": "git"
+  , "url": "git@github.com:sorensen/node-chat-demo.git"
+  }
+, "dependencies": {
+    "express": "~3.0.2"
+  , "socket.io": "~0.9.11"
+  , "jade": "~0.27.7"
+  }
+, "engines": {
+    "node": "0.8.x"
+  }
+}
