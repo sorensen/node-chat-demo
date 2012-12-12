@@ -17,13 +17,18 @@ p {
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0px 0 15px 0;
-  color: #201D19;
 }
   h1 {
     margin-top: 40px;
     padding-bottom: 3px;
     border-bottom: 6px solid #D1E9B7;
   }
+hr {
+    border: 0 none;
+    border-top: 1px solid #e5e5ee;
+    height: 1px;
+    margin: 20px 0;
+}
 #container {
   position: relative;
 }
@@ -118,7 +123,7 @@ table td {
   }
     pre, tt, code {
       font-size: 12px; line-height: 18px;
-      font-family: Monaco, Consolas, "Lucida Console", monospace;
+      font-family: Menlo, Monaco, Consolas, "Lucida Console", monospace;
       margin: 0; padding: 0;
     }
 
